@@ -6,9 +6,19 @@ Lab Time: Thurs @2pm
 """
 
 def inc_5():
-    tom = input()
-    
-    
+    in1 = int(input())
+    in2 = int(input())
+    ad = 1
+    sti = f'{in1}'
+    if in1 <= in2:
+        fin = in1 
+        while fin < in2:
+            fin = in1 + (5*ad)
+            sti = sti + f' {str(fin)}'
+            ad = ad+1
+        else: print(sti)
+
+    else: print("Second integer can't be less than the first.") 
 
 
 
