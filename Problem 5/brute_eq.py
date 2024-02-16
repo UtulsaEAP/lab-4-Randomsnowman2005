@@ -17,8 +17,21 @@ def brute_eq():
     d = int(input())
     e = int(input())
     f = int(input())
+    x = -10
+    y = -10
+    for  x in range(-10,10):
+      for y in range(-10,10):
+         if (x*a)+(x*b)==c and (x*d)+(x*e)==f:
+            print(f'x = {x} , y = {y}')
+            break
+         elif y<=10:
+            y =y+1
+         else: x=x+1
+    else: print('There is no solution ')
+    print(x,y)
+    
 
-    # YOUR CODE HERE
+    
     
 if __name__ == "__main__":
     brute_eq()
